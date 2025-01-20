@@ -1,0 +1,439 @@
+
+    @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      display: flex;
+      font-family: "Roboto", sans-serif;
+      background: linear-gradient(to bottom, #000000, #f94f25, #000000);
+      
+    }
+/* Adjust navbar layout for consistent spacing */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar li {
+  list-style: none;
+  margin-right: 15px; /* Adjust spacing between items */
+}
+.logo img {
+  width: 70px;
+}
+/* From Uiverse.io by joe-watson-sbf */ 
+.btn {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  padding: 1em 2.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+/* From Uiverse.io by ferlagher */ 
+.sign {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.4em 1em;
+  
+  background: linear-gradient(to bottom, #fc6f4c, #ff5d05);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: 50px; /* Add space from the right side */
+}
+
+.sign::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgb(241, 191, 10) 50%, rgb(229, 137, 8) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.sign:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.sign:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
+
+
+     .slider-container {
+      
+
+      width: 100%; /* Set the desired width */
+      max-width: 80%;
+      height: 600px; /* Set a fixed height as per your requirement */
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.5s ease; /* Smooth scaling transition */
+  }
+  
+  /* Slider styling */
+  .slider {
+      display: flex;
+      transition: transform 1s ease; /* Slow transition effect */
+      width: 100%; /* Adjust width to fit all slides */
+  }
+  
+  .slide {
+      width: 100%; /* Each image takes up 100% of the container width */
+      object-fit: cover;
+      transition: opacity 0.5s ease-in-out;
+  }
+  
+    
+  
+  /* Arrow buttons */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.269);
+    color: white;
+    border: none;
+    padding: 100px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 10%;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+    
+    .container1 {
+      width: 100%;
+      min-height: 460px;
+      background-color: rgba(255, 255, 255, 0);
+      display: flex;
+      padding-left: 100px; /* Adjust this value as needed */
+    }
+    
+    .text {
+      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      align-self: center;
+      align-content: right;
+      
+    }
+    .text p {
+      font-size: 1.4rem;
+      margin-top: 1px;
+    }
+
+    .text h1 {
+     
+      font-size: 3.125rem;
+    } 
+
+    .container5 {
+      margin: 10px 0 0 150px;
+      width: 70%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+  .container5 img{
+      width: 20%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      
+      transition: all ease-in-out 0.5s;
+  }
+  .container5 img:hover {
+      width: 50%;
+  }
+
+    .container2 {
+      width: 100%;
+      min-height: 60px;
+      background-color: rgba(255, 255, 255, 0); 
+      display: flex;
+      padding-left: 80px; /* Adjust this value as needed */
+    }
+    .text2 {
+      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+    .text2 p {
+      font-size: 1.4rem;
+      margin-top: 1px;
+    }
+
+    .text2 h1 {
+      text-align: center;
+      font-size: 3.125rem;
+    }
+
+
+    .container6 {
+      margin: 10px 0 0 100px;
+      width: 70%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+  }
+  .container6 img{
+      width: 30%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: all ease-in-out 0.5s;
+  }
+  .container6 img:hover {
+      width: 60%;
+
+  }
+    
+    .container3 {
+      width: 100%;
+      min-height: 60px;
+      background-color: rgba(0, 0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: left;
+    }
+    
+    /* Add the following styles for .container3 */
+
+.image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(100% * 3); /* Adjust width to allow sliding effect */
+}
+
+.image-slider1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 40%; /* Adjust as needed */
+  border-color: aliceblue;
+}
+
+.image {
+  flex: 0 0 100%; /* Each image takes up the full width of the container */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background-color: transparent;
+  color: rgb(72, 72, 72);
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}        
+ 
+ .footer {
+  display: flex;
+  flex-direction: column; /* Stack footer content vertically */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0; /* Add some padding to the footer */
+}
+
+.container4 {
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* Arrange footer columns in a row */
+  align-items: stretch; /* Ensure equal height for each column */
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 20%; /* Adjust column width */
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing inside columns */
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  align-self: flex-start; /* Align text to the left */
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.end{
+  width: ;
+}
